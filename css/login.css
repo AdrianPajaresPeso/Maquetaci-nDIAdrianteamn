@@ -1,0 +1,36 @@
+.bg-responsive{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../assets/logon-back.jpg);
+}
+
+.logo{
+    max-width: 6em;
+}
+.card{
+    border-radius: 0;
+    width: 35%;
+    box-shadow: 0px 0px 20px 10px rgba(87, 87, 87, 0.548);
+}
+
+.card-footer, .card-header{
+    border: none;
+}
+.card-footer,.card,.card-header{
+    background-color: #FBFBFB;
+}
+.btn{
+    border-radius: 0;
+}
+
+/* if(!card.isVisible()){makeIt} */
+
+@media screen and (max-width: 950px) {
+  .card{
+    border-radius: 0;
+    width: 310px;
+    box-shadow: 0px 0px 20px 10px rgba(87, 87, 87, 0.548);
+  }
+}

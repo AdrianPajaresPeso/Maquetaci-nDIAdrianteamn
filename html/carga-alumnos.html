@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content=":any">
+    <link rel="icon" href="../assets/índice.ico" type="image/png" sizes="any">
+    <title>Gestión COVID - Página Principal</title>
+    <link rel="stylesheet" href="../css/carrouselActuaciones.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<meta name="theme-color" content="#563d7c">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"><img src="../assets/jesuitas-logrono.png" width="50px" alt=""></a>
+  <button class="navbar-toggler custom-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <ul class="nav-link-close-x navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link-close btn btn-outline-primary" href="../index.html"><span></span>Cerrar Sesión</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block colorBg sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="mainpage.html">
+              <span data-feather="home"></span>
+              Inicio
+            </a>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 ">
+            <span>Alumnos</span>
+            <a class="d-flex align-items-center " href="#" aria-label="Add a new report">
+              <span data-feather="plus-circle" class="iconColor"></span>
+            </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carga-alumnos.html">
+            <span data-feather="upload"></span>
+            Cargar Alumnos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nuevo-alumno.html">
+            <span data-feather="user-plus"></span>
+            Nuevo Alumno
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="lista-alumnos.html">
+            <span data-feather="users"></span>
+            Lista de Alumnos
+          </a>
+        </li>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1">
+          <span>Incidencias</span>
+          <a class="d-flex align-items-center"  aria-label="Add a new report">
+            <span data-feather="plus-circle"  class="iconColor"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2" id="listaIncidencias">
+          <li class="nav-item">
+            <a class="nav-link" href="nueva-incidencia.html">
+              <span data-feather="file-plus"></span>
+              Nueva Incidencia
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lista-incidencias.html">
+              <span data-feather="clipboard"></span>
+              Lista de Incidencias
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="ultimas-incidencias.html">
+              <span data-feather="file-text"></span>
+              Ultimas Incidencias
+            </a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1">
+          <span>Actuaciones</span>
+          <a class="d-flex align-items-center" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle" class="iconColor"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="nueva-actuacion.html">
+              <span data-feather="file-plus"></span>
+              Nueva Actuación
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lista-actuaciones.html">
+              <span data-feather="clipboard"></span>
+              Lista de Actuaciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ultimas-actuaciones.html">
+              <span data-feather="file-text"></span>
+              Ultimas Actuaciones
+            </a>
+          </li>
+        </ul>
+ 
+        <ul class="nav-link-close-base nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="clipboard"></span>
+              Cerrar sesión
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group mr-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+      <h2>Actuaciones Pendientes</h2>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      
+      </div>
+    </main>
+  </div>
+</div>
+<script src="../js/carrouselActuaciones.js"></script>
+      <script src="../js/jquery.slim.min.js"></script>
+      <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="../js/dashboard.js"></script></body>
+</html>
